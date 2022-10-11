@@ -63,14 +63,7 @@ Task 1 :
  5- Verify not in google page<br>
  6- Verify the title  contains "Etsy"<br>
 
- Task 4 :
 
- 1- Setup the "browser driver"<br>
- 2- Go to "https://app.vytrack.com/user/login"<br>
- 3- Verify the url contains "vytrack"<br>
- 4- Verify the title contains "Login"<br>
- 5- Login to application with username as "User1" and password as "UserUser123"<br>
- 6- Verify the title contains "Dashboard"<br>
 
 
 
