@@ -26,46 +26,51 @@
 
 - How to locate element
 
-  1- id()
-  2- name()
-  3- className()
-  4- tagName()
-  5- linkText()
-  6- partialLinkText()
-  7- cssSelector()
-  8- xpath()  
+  1- id()<br>
+  2- name()<br>
+  3- className()<br>
+  4- tagName()<br>
+  5- linkText()<br>
+  6- partialLinkText()<br>
+  7- cssSelector()<br>
+  8- xpath()  <br>
 
 Tasks:
 
 Task 1 :
 
  1- Setup the "browser driver"
+<br>
  2- Go to "https://www.selenium.dev"
+ <br>
  3- Verify the URL is "https://www.selenium.dev/"
 
  Task 2 :
 
  1- Setup the "browser driver"
+ <br>
  2- Go to "https://www.selenium.dev"
+ <br>
  3- Verify the title contains "Selenium"
+ <br>
 
  Task 3 :
 
- 1- Setup the "browser driver"
- 2- Go to "https://www.google.com"
- 3- Verify the title contains "Google"
- 4- Navigate to "https://www.etsy.com"
- 5- Verify not in google page
- 6- Verify the title  contains "Etsy"
+ 1- Setup the "browser driver"<br>
+ 2- Go to "https://www.google.com"<br>
+ 3- Verify the title contains "Google"<br>
+ 4- Navigate to "https://www.etsy.com"<br>
+ 5- Verify not in google page<br>
+ 6- Verify the title  contains "Etsy"<br>
 
  Task 4 :
 
- 1- Setup the "browser driver"
- 2- Go to "https://app.vytrack.com/user/login"
- 3- Verify the url contains "vytrack"
- 4- Verify the title contains "Login"
- 5- Login to application with username as "User1" and password as "UserUser123"
- 6- Verify the title contains "Dashboard"
+ 1- Setup the "browser driver"<br>
+ 2- Go to "https://app.vytrack.com/user/login"<br>
+ 3- Verify the url contains "vytrack"<br>
+ 4- Verify the title contains "Login"<br>
+ 5- Login to application with username as "User1" and password as "UserUser123"<br>
+ 6- Verify the title contains "Dashboard"<br>
 
 
 
