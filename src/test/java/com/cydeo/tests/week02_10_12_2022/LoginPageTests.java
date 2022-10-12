@@ -63,20 +63,42 @@ public class LoginPageTests {
  5- Verify the title contains "Dashboard"
  */
 
+    //positive test
+
     @Test
     public void verify_title_contains_dashboard() {
         //   4- Login to application with username as "User1" and password as "UserUser123"
-        WebElement username = driver.findElement(By.id("prependedInput"));
-        WebElement password = driver.findElement(By.id("prependedInput2"));
-        username.sendKeys("User1");
-        password.sendKeys("UserUser123" + Keys.ENTER);
-
+        login("User1", "UserUser123");
         wait(3);
         //   5- Verify the title contains "Dashboard"
+        verifyTitle("Dashboard");
         Assert.assertTrue(driver.getTitle().contains("Dashboard"));
 
     }
 
+
+/*
+ ** TC005 As a user I should not be able to login with invalid credentials
+
+ 1- Setup the "browser driver" -Done
+ 2- Go to "https://vytrack.com" -Done
+ 3- Click Login label -Done
+ 4- Login to application with username as "invalid" and password as "invalid"
+ 5- Verify the title contains "Login"
+ */
+
+
+    //negative test
+    @Test
+    public void verify_title_contains_Login() {
+
+        //   4- Login to application with username as "invalid" and passwordWeb as "invalid"
+        login("invalid", "invalid");
+        wait(3);
+        //   5- Verify the title contains "Login"
+       verifyTitle("Login");
+
+    }
 
     public void wait(int seconds) {
         try {
@@ -84,6 +106,21 @@ public class LoginPageTests {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void login(String username, String password) {
+
+
+        WebElement usernameWeb = driver.findElement(By.id("prependedInput"));
+        WebElement passwordWeb = driver.findElement(By.id("prependedInput2"));
+        usernameWeb.sendKeys(username);
+        passwordWeb.sendKeys(password + Keys.ENTER);
+
+
+    }
+
+    private void verifyTitle(String title) {
+        Assert.assertTrue(driver.getTitle().contains(title));
     }
 
 
