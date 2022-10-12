@@ -51,7 +51,7 @@ public class MainPageTests {
     }
 
     @Test
-    public void verify_about_us_label_is_displayed() {
+    public void verify_about_us_label_is_displayed(){
         //2-verify LOGIN label is displayed
         String locator = "//ul[@id='top-menu']/li[.='About us']";
         WebElement aboutUsLabel = driver.findElement(By.xpath(locator));
@@ -66,4 +66,5 @@ public class MainPageTests {
             throw new RuntimeException(e);
         }
     }
+
 }
