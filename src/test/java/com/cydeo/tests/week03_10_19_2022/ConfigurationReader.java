@@ -23,7 +23,7 @@ public class ConfigurationReader {
 
     }
                          //I want to get value of key from properties file
-    public  static String getValue(String key){
+    public  static String getValueOf(String key){
         String value = properties.getProperty(key);
         return value;
     }
