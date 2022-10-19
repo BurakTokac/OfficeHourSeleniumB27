@@ -1,8 +1,6 @@
 package com.cydeo.tests.week03_10_19_2022;
 
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Arrays;
 import java.util.Properties;
 
 public class ConfigurationReader {
